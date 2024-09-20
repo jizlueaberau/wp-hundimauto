@@ -227,7 +227,7 @@ h4 {
 	background-color: var(--color-bg-brown-hover);
 }
 .theme-default #theme {
-	background-image: url(../images/logo-bg-default.png);
+	background-image: url(assets/images/logo-bg-default.png);
 }
 .theme-default #content a {
 	background-image: linear-gradient(180deg, var(--color-bg-brown-hover), var(--color-bg-brown-hover)), var(--cap-image-left), var(--cap-image-right);

@@ -1,64 +1,6 @@
-<!DOCTYPE html>
-<html lang="de-CH">
-<head>
-	<meta charset="utf-8">
-	<title>Hund im Auto</title>
-	<meta http-equiv="X-UA-Compatible" content="IE-edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="color-scheme" content="light dark" />
-	
-	<?php wp_head(); ?>
-
-</head>
-<body class="home theme-default">
-
-	<header id="header">
-		<div id="theme">
-			<a href="/"><img id="logo" src="assets/images/logo-hia.svg" alt="Hund im Auto" /></a>
-		</div>
-		<div class="container">
-			<div class="row justify-content-end">
-				<div class="col-md-12">
-					<nav class="main-menu">
-						<ul class="navigation top-menu d-flex flex-row justify-content-end list-unstyled">
-							<li class="menu-item"><a href="index.html">Startseite</a></li>
-							<li class="menu-item menu-item-has-children"><a href="blog.html">Produkte nach Mass</a>
-								<ul class="sub-menu">
-									<li class="menu-item"><a href="index.html">Hundegitter nach Mass</a></li>
-									<li class="menu-item menu-item-has-children"><a href="index.html">Hundeboxen nach Mass</a>
-										<ul class="submenu">
-											<li class="menu-item"><a href="index.html">Unterseite</a></li>
-											<li class="menu-item"><a href="index.html">Unterseite</a></li>
-										</ul></li>
-									<li class="menu-item"><a href="index.html">Fahrzeugeinrichtungen nach Mass</a></li>
-									<li class="menu-item"><a href="index.html">Holzarbeiten nach Mass</a></li>
-									<li class="menu-item"><a href="index.html">Travelmat&copy; nach Mass</a></li>
-								</ul></li>
-							<li class="menu-item"><a href="herstellung.html">Herstellung</a></li>
-							<li class="menu-item"><a href="zubehoer.html">Zubehör</a></li>
-							<li class="menu-item special-menu"><a href="preise.html">Preise</a></li>
-							<li class="menu-item special-menu"><a href="offerte.html">Offerte</a></li>
-						</ul>
-					</nav>
-
-					<button type="button" class="mobile-nav-toggler hamburger hamburger--elastic" aria-label="Menu" aria-controls="navigation">
-						<span class="hamburger-label">Menu</span>
-						<span class="hamburger-box"><span class="hamburger-inner"></span></span>
-						
-					</button>
-				</div>
-			</div>
-
-			<!-- Mobile Menu -->
-			<div class="mobile-menu">
-				<nav class="menu-box">
-					<ul class="navigation clearfix"></ul>
-				</nav>
-			</div><!-- end Mobile Menu -->
-
-		</div>
-	</header><!-- end header parts -->
-
+<?php
+	get_header();
+?>
 	<section id="content">
 
 		<article id="intro" class="container">
@@ -247,68 +189,6 @@
 
 	</section><!-- /end section content -->
 
-	<footer id="footer" class="container-fluid px-0">
-		<div class="row">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 col-lg">
-						<strong>Hund im Auto</strong><br />
-						<p>Herrenwisstrasse 30<br />CH-8180 Bülach</p>
-						<div class="container-fluid g-0 coordinates">
-							<div class="row">
-								<div class="col-3">Telefon</div>
-								<div class="col"><a href="tel:+41448750222">+41 44 875 02 22</a></div>
-							</div>
-							<div class="row">
-								<div class="col-3">E-Mail</div>
-								<div class="col"><a href="mailto:info@hundimauto.ch">info@hundimauto.ch</a></div>
-							</div>
-						</div>
-						<ul class="social-media">
-							<li><a href="/" target="_blank" rel="no-follow"><img src="assets/images/facebook-icon.svg" alt="" height="30" /></a></li>
-							<li><a href="/" target="_blank" rel="no-follow"><img src="assets/images/vimeo-icon.svg" alt=""  height="30" /></a></li>
-						</ul>
-					</div>
-					<div class="col-md-12 col-lg-3">
-						<ul class="footer-nav">
-							<li><a href="/">Produkte nach Mass</a></li>
-							<li><a href="/">Herstellung</a></li>
-							<li><a href="/">Zubehör</a></li>
-							<li><a href="/">Preise</a></li>
-							<li><a href="/">Offerte</a></li>
-						</ul>
-					</div>
-					<div class="col-md-12 col-lg-3">
-						<ul class="footer-meta-nav">
-							<li><a href="/">Impressum</a></li>
-							<li><a href="/">Datenschutz</a></li>
-							<li><a href="/">AGB</a></li>
-						</ul>
-					</div>
-					<div class="col-md-12 col-lg-2 logo">
-						<a href="/"><img src="assets/images/HiA-Sticker50mm-mit-weissem-Rand-OKfix.svg" alt="" /></a>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row sub-footer">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						&copy;2024 Hund im Auto
-					</div>
-				</div>
-			</div>
-		</div>
-
-	</footer><!-- end section footer -->
-
-
-
-	<div id="debug">
-	</div>
-
-	<?php wp_footer(); ?>
-
-</body>
-</html>
+	<?php
+		get_footer();
+	?>
