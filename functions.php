@@ -27,7 +27,9 @@ if ( !function_exists( 'hundimauto_theme_setup' ) ) {
 		
 		register_nav_menus(
 			array(
-				'primary' => esc_html__( 'Primary Menu', 'hundimauto' )
+				'primary' 		=> esc_html__( 'Primary Menu', 'hundimauto' ),
+				'secondary'		=> esc_html__( 'Secondary Menu', 'hundimauto' ),
+				'third'			=> esc_html__( 'Meta Menu', 'hundimauto' )
 			)
 		);
 	}
