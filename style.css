@@ -618,7 +618,7 @@ h4 {
 		background-color: var(--color-bg-body-dark);
 	}
 	.theme-default #theme {
-		background-image: url(../images/logo-bg-dark-mode.png);
+		background-image: url(assets/images/logo-bg-dark-mode.png);
 	}
 	.theme-default #content a {
 		background-image: linear-gradient(180deg, var(--color-bg-white-hover), var(--color-bg-white-hover)), var(--cap-image-left), var(--cap-image-right);

@@ -19,7 +19,7 @@
     <?php wp_head(); ?>
 
 </head>
-<body <?php body_class( 'theme-default' ); ?>>
+<body <?php body_class( get_theme_mod( 'theme_setting') ); ?>>
 
     <header id="header">
         <div id="theme">

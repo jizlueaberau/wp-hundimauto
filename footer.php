@@ -12,21 +12,33 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 col-lg">
-						<p><strong>Hund im Auto</strong><br />
-						Herrenwisstrasse 30<br />CH-8180 Bülach</p>
+						<?php echo get_theme_mod( 'footer_address' ); ?>
 						<div class="container-fluid g-0 coordinates">
 							<div class="row">
 								<div class="col-3">Telefon</div>
-								<div class="col"><a href="tel:+41448750222">+41 44 875 02 22</a></div>
+								<div class="col"><a href="tel:<?php echo str_replace(' ', '', get_theme_mod( 'footer_phone' ) ); ?>"><?php echo get_theme_mod('footer_phone'); ?></a></div>
 							</div>
 							<div class="row">
 								<div class="col-3">E-Mail</div>
-								<div class="col"><a href="mailto:info@hundimauto.ch">info@hundimauto.ch</a></div>
+								<div class="col"><a href="mailto:<?php echo get_theme_mod('footer_mail'); ?>"><?php echo get_theme_mod('footer_mail'); ?></a></div>
 							</div>
 						</div>
-						<ul class="social-media">
-							<li><a href="/" target="_blank" rel="no-follow"><img src="assets/images/facebook-icon.svg" alt="" height="30" /></a></li>
-							<li><a href="/" target="_blank" rel="no-follow"><img src="assets/images/vimeo-icon.svg" alt=""  height="30" /></a></li>
+						<?php
+							// Default values for social media channels repeater (kirki)
+							// Documentation: https://docs.themeum.com/kirki/controls/repeater/
+							$defaults = [
+								'channel_name'	=> '',
+								'channel_icon'	=> '',
+								'channel_url'	=> '',
+								'icon_style'	=> ''
+							];
+							// theme mod settings to check
+							$settings = get_theme_mod( 'social_media', $defaults );
+
+						?><ul class="social-media">
+							<?php foreach ( $settings as $setting ) : ?>
+								<li><a href="<?php echo $setting['channel_url']; ?>" target="_blank" rel="no-follow"><img src="<?php echo $setting['channel_icon']['url']; ?>" alt="<?php echo $setting['channel_name']; ?>" style="<?php echo $setting['icon_style']; ?>" /></a></li>
+							<?php endforeach; ?>
 						</ul>
 					</div>
 					<div class="col-md-12 col-lg-3">

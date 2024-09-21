@@ -68,6 +68,15 @@ function hundimauto_assets() {
 }
 add_action( 'wp_enqueue_scripts', 'hundimauto_assets' );
 
+/*
+	Enable SVG Upload
+	https://www.sven-hoerig.de/ratgeber/wordpress-svg-upload-aktivieren/
+*/
+function allow_svg_upload( $mimes ) {
+	$mimes[ 'svg' ] = 'image/svg+xml';
+	return $mimes;
+}
+add_filter( 'upload_mimes', 'allow_svg_upload' );
 
 
 /*
