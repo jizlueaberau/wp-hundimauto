@@ -1,7 +1,10 @@
 <?php
 
+/* Add Customizer Functionality */
+require get_template_directory() . '/includes/customizer-hundimauto.php';
+
 /*
-	Enqueue scripts and styles
+	Theme Setup
 */
 
 if ( !function_exists( 'hundimauto_theme_setup' ) ) {
@@ -34,6 +37,10 @@ if ( !function_exists( 'hundimauto_theme_setup' ) ) {
 }
 add_action( 'after_setup_theme', 'hundimauto_theme_setup' );
 
+/*
+	Enqueue scripts and styles
+*/
+
 function hundimauto_assets() {
 
 	// Enqueue CSS Files
@@ -58,6 +65,8 @@ function hundimauto_assets() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'hundimauto_assets' );
+
+
 
 /*
 	Removing Emoji's from Code

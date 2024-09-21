@@ -12,8 +12,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 col-lg">
-						<strong>Hund im Auto</strong><br />
-						<p>Herrenwisstrasse 30<br />CH-8180 Bülach</p>
+						<p><strong>Hund im Auto</strong><br />
+						Herrenwisstrasse 30<br />CH-8180 Bülach</p>
 						<div class="container-fluid g-0 coordinates">
 							<div class="row">
 								<div class="col-3">Telefon</div>
