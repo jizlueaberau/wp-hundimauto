@@ -187,7 +187,7 @@
 
 		<br /><br /><br /><br />
 
-	</section><!-- /end section content -->
+	
 
 	<?php
 		get_footer();

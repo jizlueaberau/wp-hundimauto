@@ -242,13 +242,17 @@ h4 {
 	background-color: var(--color-bg-brown-hover);
 }
 
+/* Content Spacing */
+
+#content {
+	padding-top: 92px;
+}
+
 /* Intro section */
 
 #intro {
 	position: relative;
 	top: 0; left: 0;
-	padding-top: 92px;
-	padding-bottom: 48px;
 }
 #intro h1 {
 	font-size: 1rem;
@@ -492,12 +496,8 @@ h4 {
 		height: 94px;
 		margin: 16px 0 0 38px;
 	}
-	#header .container {
-		padding-top: 16px;
-	}
-	#intro {
+	#content {
 		padding-top: 152px;
-		padding-bottom: 152px;
 	}
 	#intro h1 {
 		font-size: 1.125rem;
@@ -594,19 +594,15 @@ h4 {
 	:root {
 		--font-size: 20px;
 	}
-	.container {
-		width: 1440px;
-	}
-	#logo {
-		height: 134px;
-		margin: 32px 0 0 94px;
+	#content {
+		padding-top: 266px;
 	}
 	#header .container {
 		padding-top: 32px;
 	}
-	#intro {
-		padding-top: 266px;
-		padding-bottom: 166px;
+	#logo {
+		height: 134px;
+		margin: 32px 0 0 94px;
 	}
 }
 

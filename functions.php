@@ -78,7 +78,6 @@ function allow_svg_upload( $mimes ) {
 }
 add_filter( 'upload_mimes', 'allow_svg_upload' );
 
-
 /*
 	Removing Emoji's from Code
 	https://fastwp.de/wordpress-emoji-support-deaktivieren/

@@ -7,7 +7,8 @@
  * @package hundimauto
  * @since Hund im Auto Custom Theme 1.0
  */
-?><footer id="footer" class="container-fluid px-0">
+?>
+	<footer id="footer" class="container-fluid px-0">
 		<div class="row">
 			<div class="container">
 				<div class="row">
