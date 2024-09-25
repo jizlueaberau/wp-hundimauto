@@ -7,7 +7,7 @@
 			<div class="row">
 				<div class="col-md-10 offset-md-1 gx-5">
 					<hgroup>
-						<h1 class="os-animation" data-animation="animate__fadeInUp" data-delay=".3s"><a href="/">hundimauto.ch</a><span>&nbsp;&ndash;&nbsp;Hundegitter und Hundeboxen <strong>nach Mass</strong> in bewährter Schweizer Premium Qualität.</span></h1>
+						<h1 class="os-animation" data-animation="animate__fadeInUp" data-delay="300ms"><a href="/">hundimauto.ch</a><span>&nbsp;&ndash;&nbsp;Hundegitter und Hundeboxen <strong>nach Mass</strong> in bewährter Schweizer Premium Qualität.</span></h1>
 						<h2 class="os-animation" data-animation="animate__fadeInUp" data-delay=".3s">Ihr Ansprechpartner für <a href="#">optimale Transportlösungen</a>, qualitativ <a href="#">hochwertig und fachmännisch</a> hergestellte <a href="#">Hundegitter</a> und <a href="#">Hundeboxen</a> nach Mass für Ihren <strong>HUND</strong> im <strong>AUTO</strong>.</h2>
 					</hgroup>
 					<div class="container-fluid g-0 contact os-animation" data-animation="animate__fadeInUp" data-delay=".6s">
