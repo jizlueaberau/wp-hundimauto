@@ -9,14 +9,14 @@
  */
 	get_header();
 ?>
-
-	<section id="content">
+	
+	<article id="content">
 
 		<?php
 			the_content();
 		?>
 
-	</section><!-- /end section content -->
+	</article><!-- /end content article -->
 
 <?php
 	get_footer();
