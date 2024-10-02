@@ -9,7 +9,7 @@
  */
 	get_header();
 ?>
-	
+	<!-- index.php -->
 	<article id="content">
 
 		<?php

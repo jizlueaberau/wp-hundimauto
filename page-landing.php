@@ -1,6 +1,9 @@
 <?php
 /**
- * Theme template for displaying all pages
+ * Custom Theme template for landing page purposes
+ * 
+ * Template Name: Landing Page
+ * description: Landing Page for custom video styling
  * 
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  * 
@@ -10,7 +13,7 @@
 	get_header();
 ?>
 	
-	<article id="content" role="main">
+	<article id="content" class="landing-page" role="main">
 
 		<?php
 			the_content();
