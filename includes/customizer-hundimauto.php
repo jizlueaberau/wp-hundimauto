@@ -29,12 +29,22 @@ new \Kirki\Section(
 );
 
 new \Kirki\Section(
+	'hundimauto_contact_box',
+	[
+		'title'			=> esc_html__( 'Pre Footer Kontakt Box', 'hundimauto' ),
+		'description'	=> esc_html__( 'Pre Footer Kontakt Informationen anpassen (wird nur im Seitentyp Landingpage angezeigt).', 'hundimauto' ),
+		'panel'			=> 'hundimauto_theme_option_panel',
+		'priority'		=> 20
+	]
+);
+
+new \Kirki\Section(
 	'hundimauto_footer_contacts',
 	[
 		'title'			=> esc_html__( 'Kontaktangaben', 'hundimauto' ),
 		'description'	=> esc_html__( 'Adressangaben anpassen', 'hundimauto' ),
 		'panel'			=> 'hundimauto_theme_option_panel',
-		'priority'		=> 20
+		'priority'		=> 30
 
 	]
 );
@@ -45,7 +55,7 @@ new \Kirki\Section(
 		'title'			=> esc_html__( 'Social Media Kanäle', 'hundimauto' ),
 		'description'	=> '',
 		'panel'			=> 'hundimauto_theme_option_panel',
-		'priority'		=> 30
+		'priority'		=> 40
 
 	]
 );
@@ -65,6 +75,62 @@ new \Kirki\Field\Select(
 		'choices'		=> [
 			'theme-default' 	=> esc_html__( 'Default Theme', 'hundimauto' ),
 			'theme-xmas'		=> esc_html__( 'Christmas Theme', 'hundimauto' )
+		]
+	]
+);
+
+/* Pre Footer Contact Box */
+
+new \Kirki\Field\Text(
+	[
+		'settings' => 'pre-footer_title',
+		'label'    => esc_html__( 'Titel', 'hundimauto' ),
+		'section'  => 'hundimauto_contact_box',
+		'default'  => '',
+		'priority' => 10,
+	]
+);
+
+new \Kirki\Field\Text(
+	[
+		'settings' => 'pre-footer_button_text',
+		'label'    => esc_html__( 'Button Text', 'hundimauto' ),
+		'section'  => 'hundimauto_contact_box',
+		'default'  => '',
+		'priority' => 20,
+	]
+);
+
+new \Kirki\Field\URL(
+	[
+		'settings' => 'pre-footer_target_url',
+		'label'    => esc_html__( 'Button Ziel Seite', 'hundimauto' ),
+		'section'  => 'hundimauto_contact_box',
+		'default'  => '',
+		'priority' => 30,
+	]
+);
+
+new \Kirki\Field\Editor(
+	[
+		'settings'		=> 'pre-footer_info_text',
+		'label'			=> esc_html__( 'Info Text', 'hundimauto' ),
+		'description'	=> '',
+		'section'		=> 'hundimauto_contact_box',
+		'default'		=> '',
+		'priority' => 40,
+	]
+);
+
+new \Kirki\Field\Select(
+	[
+		'settings'    => 'pre-footer_bg_color_class',
+		'label'       => esc_html__( 'Hintergrundfarbe', 'hundimauto' ),
+		'section'     => 'hundimauto_contact_box',
+		'default'     => 'bg-section-light',
+		'placeholder' => esc_html__( 'Bitte auswählen', 'hundimauto' ),
+		'choices'     => [
+			'bg-section-light' => esc_html__( 'Hellgrau', 'hundimauto' )
 		]
 	]
 );

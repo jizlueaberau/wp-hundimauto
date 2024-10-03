@@ -8,11 +8,12 @@
  * @since Hund im Auto Custom Theme 1.0
  */
 ?>
+
 	<footer id="footer" class="container-fluid px-0">
 		<div class="row">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 col-lg">
+					<div class="col-md-12 col-lg-4">
 						<?php echo get_theme_mod( 'footer_address' ); ?>
 						<div class="container-fluid g-0 coordinates">
 							<div class="row">
@@ -42,36 +43,44 @@
 							<?php endforeach; ?>
 						</ul>
 					</div>
-					<div class="col-md-12 col-lg-3">
-						<?php
-							wp_nav_menu(
-								array(
-									'theme_location'		=> 'secondary',
-									'depth'					=> 1,
-									'container'				=> 'nav',
-									'container_class'		=> '',
-									'menu_class'			=> 'footer-nav',
-									'fallback_cb'			=> false
-								)
-							);
-						?>
-					</div>
-					<div class="col-md-12 col-lg-3">
-						<?php
-							wp_nav_menu(
-								array(
-									'theme_location'		=> 'third',
-									'depth'					=> 1,
-									'container'				=> 'nav',
-									'container_class'		=> '',
-									'menu_class'			=> 'footer-meta-nav',
-									'fallback_cb'			=> false
-								)
-							);
-						?>
+					<div class="col-md-12 col-lg-6">
+						<div class="row">
+							<div class="container-fluid px-0">
+								<div class="row">
+									<div class="col-6">
+									<?php
+										wp_nav_menu(
+											array(
+												'theme_location'		=> 'secondary',
+												'depth'					=> 1,
+												'container'				=> 'nav',
+												'container_class'		=> '',
+												'menu_class'			=> 'footer-nav',
+												'fallback_cb'			=> false
+											)
+										);
+									?>
+									</div>
+									<div class="col-6">
+									<?php
+										wp_nav_menu(
+											array(
+												'theme_location'		=> 'third',
+												'depth'					=> 1,
+												'container'				=> 'nav',
+												'container_class'		=> '',
+												'menu_class'			=> 'footer-meta-nav',
+												'fallback_cb'			=> false
+											)
+										);
+									?>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="col-md-12 col-lg-2 logo">
-						<a href="/"><img src="<?php echo get_theme_file_uri( 'assets/images/HiA-Sticker50mm-mit-weissem-Rand-OKfix.svg' ); ?>" alt="" /></a>
+						<a href="/"><img src="<?php echo get_theme_file_uri( 'assets/images/HiA-Sticker50mm-mit-weissem-Rand-OKfix.svg' ); ?>" alt="" class="w-100" /></a>
 					</div>
 				</div>
 			</div>

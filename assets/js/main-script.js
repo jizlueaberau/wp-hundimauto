@@ -50,7 +50,7 @@
 
 	// make all animations fadeinup on mobile
 	if ($(window).width() < 992) {
-		$('div').attr('data-animation','animate__fadeInUp');
+		$('div.os-animation').attr('data-animation','animate__fadeInUp');
 	}
 
 	// animation css waypoints script

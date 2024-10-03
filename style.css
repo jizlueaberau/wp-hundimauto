@@ -451,7 +451,7 @@ h4 {
 	display: block;
 	font-style: normal;
 	font-size: 0.875rem;
-	margin-top: 1rem;
+	margin-top: 0.5rem;
 } 
 
 @media (min-width: 768px) {
@@ -571,10 +571,9 @@ h4 {
 
 @media (min-width: 1400px) {}
 
-/* Footer & Contacts */
+/* Footer, Pre-Footer & Contacts */
 
 #footer {
-	margin-top: 2rem;
 	padding: 48px 0 0 0;
 }
 #footer .logo {
@@ -616,13 +615,19 @@ h4 {
 	font-size: 0.875rem;
 	margin-top: 2rem;
 }
+#pre-footer {
+	padding: 2rem 0;
+}
+#pre-footer .contact-box {
+	padding: 0;
+}
 @media (min-width: 768px) {}
 
 @media (min-width: 992px) {
-	#footer {
-		margin-top: 4rem;
+	#pre-footer h3 {
+		text-align: center;
 	}
-	#logo-footer {
+	#footer .logo {
 		text-align: center;
 	}
 }
@@ -630,11 +635,9 @@ h4 {
 @media (min-width: 1200px) {}
 
 @media (min-width: 1400px) {
-	#footer {
-		margin-top: 6rem;
-	}
-	#footer .container {
-		width: 1440px;
+	#footer .container,
+	#pre-footer .container {
+		max-width: 1440px;
 	}
 }
 
@@ -713,7 +716,7 @@ h4 {
 	line-height: 1rem;
 	padding: 10px;
 	z-index: 9999999;
-	display: none;
+	display: block;
 }
 #debug p {
 	padding: 0;

@@ -18,6 +18,8 @@
 
 	</article><!-- /end content article -->
 
+	<br /><br /><br />
+
 <?php
 	get_footer();
 ?>

@@ -16,7 +16,16 @@
 	<article id="content" class="landing-page" role="main">
 
 		<?php
+
 			the_content();
+		?>
+
+		<br /><br /><br />
+
+		<?php
+			
+			get_template_part( 'partials/pre-footer' );
+
 		?>
 
 	</article><!-- /end content article -->
