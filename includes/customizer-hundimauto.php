@@ -127,10 +127,11 @@ new \Kirki\Field\Select(
 		'settings'    => 'pre-footer_bg_color_class',
 		'label'       => esc_html__( 'Hintergrundfarbe', 'hundimauto' ),
 		'section'     => 'hundimauto_contact_box',
-		'default'     => 'bg-section-light',
+		'default'     => '',
 		'placeholder' => esc_html__( 'Bitte auswählen', 'hundimauto' ),
 		'choices'     => [
-			'bg-section-light' => esc_html__( 'Hellgrau', 'hundimauto' )
+			'bg-section-light' => esc_html__( 'Hellgrau', 'hundimauto' ),
+			'bg-section-dark' => esc_html__( 'Dunkelgrau', 'hundimauto' )
 		]
 	]
 );
