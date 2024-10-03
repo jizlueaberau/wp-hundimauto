@@ -16,9 +16,9 @@
 			the_content();
 		?>
 
-	</article><!-- /end content article -->
+		<br /><br /><br />
 
-	<br /><br /><br />
+	</article><!-- /end content article -->
 
 <?php
 	get_footer();

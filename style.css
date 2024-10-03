@@ -384,7 +384,11 @@ h4 {
 
 @media (min-width: 1200px) {}
 
-@media (min-width: 1400px) {}
+@media (min-width: 1400px) {
+	.section-title {
+		padding: 8rem 0rem 4rem;
+	}
+}
 
 /* Video Embed (Vimeo) */
 
