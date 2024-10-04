@@ -97,10 +97,9 @@
 
 	</footer><!-- end section footer -->
 
-	<?php get_template_part( 'partials/modal-video' ); ?>
+	<div id="debug"></div>
 
-	<div id="debug">
-	</div>
+	<?php get_template_part( 'partials/modal-video' ); ?>
 
 	<?php wp_footer(); ?>
 
