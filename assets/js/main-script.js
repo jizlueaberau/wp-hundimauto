@@ -49,8 +49,16 @@
 	});
 
 	// make all animations fadeinup on mobile
-	if ($(window).width() < 992) {
+	var bp = 992;
+	var mobileDelay = 200;
+	if ($(window).width() < bp) {
 		$('div.os-animation').attr('data-animation','animate__fadeInUp');
+		// set delay to 200ms on each element below the fold
+		$('div.os-animation').each(function( index ) {
+			if ( $(this).offset().top > $(window).height() ) {
+				$(this).attr('data-delay', mobileDelay + 'ms');
+			}
+		});
 	}
 
 	// animation css waypoints script
@@ -79,25 +87,8 @@
 	onScrollInit($('.os-animation'));
 
 	// initializing testimonials swiper
-	var swiper = new Swiper("#testimonials .swiper", {
-		slidesPerView: 1,
-		spaceBetween: 30,
-		autoplay: {
-			delay: 5000,
-			disableOnInteraction: false
-		},
-		pagination: {
-			el: ".swiper-pagination",
-			clickable: true,
-			dynamicBullets: true
-		},
-		breakpoints: {
-			992: {
-				slidesPerView: 2,
-				spaceBetween: 90
-			}
-		}
-	});
+	const testimonialCarousel = jQuery ( '#testimonial .swiper' );
+	const swiperInstance = testimonialCarousel.data( 'swiper' );
 
 	// vimeo autoplay script
 	// https://jsfiddle.net/oxf4dtn3/
