@@ -656,6 +656,13 @@ h4 {
 
 @media (min-width: 1400px) {}
 
+/* Video Modal */
+
+.modal-body {
+	position: relative;
+	padding: 0px;
+}
+
 /* Footer, Pre-Footer & Contacts */
 
 #footer {

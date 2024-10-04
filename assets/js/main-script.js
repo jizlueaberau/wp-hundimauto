@@ -120,6 +120,16 @@
 		}
 	});
 
+	// modal video
+	// https://codepen.io/JacobLett/pen/xqpEYE
+	const videoModal = document.getElementById( 'videoModal' );
+
+	var videoSrc = 'https://player.vimeo.com/video/1001908180?autoplay=1&loop=1&color=d2ba8b&title=0&byline=0&portrait=0&muted=1&dnt=1';
+	videoModal.addEventListener( 'shown.bs.modal', () => {
+		console.log( 'modal visible' );
+		$("#modal-video-frame").attr('src', videoSrc);
+	});
+	
 	// debug window
 	$(document).ready(function() {
 		$('#debug').append('<p>'+

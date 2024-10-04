@@ -97,7 +97,7 @@
 
 	</footer><!-- end section footer -->
 
-
+	<?php get_template_part( 'partials/modal-video' ); ?>
 
 	<div id="debug">
 	</div>
