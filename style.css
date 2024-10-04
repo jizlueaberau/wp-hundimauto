@@ -662,11 +662,16 @@ h4 {
 
 @media (min-width: 1400px) {}
 
-/* Video Modal */
+/* Media Modal */
 
-.modal-body {
+#mediaModal .modal-body {
 	position: relative;
 	padding: 0px;
+}
+#mediaModal .frame-img {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 /* Footer, Pre-Footer & Contacts */

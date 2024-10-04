@@ -111,15 +111,43 @@
 		}
 	});
 
-	// modal video
+	// media modal based on bootstrap modal
 	// https://codepen.io/JacobLett/pen/xqpEYE
-	const videoModal = document.getElementById( 'videoModal' );
-
-	var videoSrc = 'https://player.vimeo.com/video/1001908180?autoplay=1&loop=1&color=d2ba8b&title=0&byline=0&portrait=0&muted=1&dnt=1';
-	videoModal.addEventListener( 'shown.bs.modal', () => {
-		console.log( 'modal visible' );
-		$("#modal-video-frame").attr('src', videoSrc);
+	let media = Array();
+	media['type'] = '';
+	media['src'] = '';
+	media['ratio'] = '';
+	media['title'] = '';
+	$('[data-bs-target=#mediaModal]').on('click', function() {
+		media.type = $(this).data('media-type');
+		media.src = $(this).data('media-src');
+		media.ratio = $(this).data('media-ratio');
+		media.title = $(this).data('media-title');
+		return false;
 	});
+	const mediaModal = document.getElementById( 'mediaModal' );
+	if ( mediaModal != null ) {
+		mediaModal.addEventListener( 'shown.bs.modal', () => {
+			$(mediaModal).find('div.ratio').addClass( 'ratio-' + media.ratio );
+			$(mediaModal).find('.modal-header h1').append( media.title );
+			if ( media.type == "vimeo" ) {
+				$(mediaModal).find('div.ratio').append(
+					'<iframe src="https://player.vimeo.com/video/' + media.src + '?' +
+					'autoplay=1&amp;loop=1&amp;color=d2ba8b&amp;title=0&amp;byline=0&amp;portrait=0&amp;muted=1&dnt=1" ' +
+					'width="640" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" data-ready="true"></iframe>'
+				);
+			} else if ( media.type == 'image' ) {
+				$(mediaModal).find('div.ratio').append(
+					'<div class="frame-img" style="background-image: url(\'' +  media.src + '\')";></div>'
+				);
+			}
+		});
+		mediaModal.addEventListener( 'hide.bs.modal', () => {
+			$(mediaModal).find('div.ratio').removeClass( 'ratio-' + media.ratio );
+			$(mediaModal).find('div.ratio').html( '' );
+			$(mediaModal).find('.modal-header h1').html( '' );
+		});
+	}
 	
 	// debug window
 	$(document).ready(function() {

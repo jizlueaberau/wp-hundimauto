@@ -99,7 +99,7 @@
 
 	<div id="debug"></div>
 
-	<?php get_template_part( 'partials/modal-video' ); ?>
+	<?php get_template_part( 'partials/media-modal' ); ?>
 
 	<?php wp_footer(); ?>
 
