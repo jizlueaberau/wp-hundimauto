@@ -86,10 +86,6 @@
 	}
 	onScrollInit($('.os-animation'));
 
-	// initializing testimonials swiper
-	const testimonialCarousel = jQuery ( '#testimonial .swiper' );
-	const swiperInstance = testimonialCarousel.data( 'swiper' );
-
 	// vimeo autoplay script
 	// https://jsfiddle.net/oxf4dtn3/
 
