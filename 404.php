@@ -24,7 +24,7 @@
 				<div class="message404 col-12 g-0">
 					<div class="rcol page-title os-animation" data-animation="animate__fadeInUp" data-delay="400ms">
 						<hgroup>
-							<h2><strong>Hoppla!</strong><br />Da ist etwas schiefgelaufen.</h2>
+							<h2><strong>Hoppla!</strong><br /><br />Da ist etwas schief gelaufen.</h2>
 						</hgroup>
 						<p>Seite <strong>404</strong> nicht gefunden. Hier geht's lang:</p>
 						<?php
