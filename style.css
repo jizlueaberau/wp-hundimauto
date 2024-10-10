@@ -694,6 +694,48 @@ h4 {
 
 @media (min-width: 1400px) {}
 
+/* 404 */
+
+.message404 {
+	display: flex;
+	flex-flow: row wrap;
+}
+.message404 .rcol,
+.message404 .lcol {
+	width: 100%;
+}
+.message404 .lottie {
+	position: relative;
+	overflow: hidden;
+	padding: 1rem;
+}
+.message404 .lottie>* {
+	margin-top: -8rem;
+}
+.message404 h2 {
+	margin: 1rem 0 1rem;
+}
+.message404 h2 strong {
+	font-size: 6rem;
+}
+.message404 ul.footer-nav {
+	list-style-type: none;
+	padding: 0;
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+	.message404 .rcol,
+	.message404 .lcol {
+		width: 45%;
+	}
+}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
 /* Media Modal */
 
 #mediaModal .modal-body {

@@ -13,7 +13,7 @@
 	get_header();
 ?>
 	
-	<article id="content" class="landing-page" role="main">
+	<section id="content" class="landing-page" role="main">
 
 		<?php
 
@@ -28,7 +28,7 @@
 
 		?>
 
-	</article><!-- /end content article -->
+	</section><!-- /end content section -->
 
 <?php
 	get_footer();

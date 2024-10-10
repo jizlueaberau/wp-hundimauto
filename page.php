@@ -10,7 +10,7 @@
 	get_header();
 ?>
 	
-	<article id="content" role="main">
+	<section id="content" role="main">
 
 		<?php
 			the_content();
@@ -18,7 +18,7 @@
 
 		<br /><br /><br />
 
-	</article><!-- /end content article -->
+	</section><!-- /end content section -->
 
 <?php
 	get_footer();
