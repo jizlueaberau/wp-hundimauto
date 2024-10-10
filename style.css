@@ -126,6 +126,11 @@ h4 {
 	text-decoration: none;
 	background-position-x: calc(5000% + calc(var(--underline-intrinsic-size) * 1px)), calc(500% + calc(var(--underline-intrinsic-size) * 1px)), 600%;
 }
+#content h1 a,
+#content .product-image a,
+#content .sb-expand-on-click {
+	background-image: none !important;
+}
 
 @media (min-width: 992px) {
 	#content h2 a {
@@ -261,10 +266,6 @@ h4 {
 	--cap-image-left: url('data:image/svg+xml,<svg width="15" height="30" viewBox="0 0 15 30" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_97_2699)"><mask id="mask0_97_2699" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="30"><rect width="15" height="30" fill="%23D9D9D9"/></mask><g mask="url(%23mask0_97_2699)"><circle cx="15" cy="15" r="15" fill="%23D5C197" fill-opacity="0.5"/></g></g><defs><clipPath id="clip0_97_2699"><rect width="15" height="30" fill="white"/></clipPath></defs></svg>');
 	--cap-image-right: url('data:image/svg+xml,<svg width="15" height="30" viewBox="0 0 15 30" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(%23clip0_97_2707)"><mask id="mask0_97_2707" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="30"><rect width="15" height="30" fill="%23D9D9D9"/></mask><g mask="url(%23mask0_97_2707)"><circle cy="15" r="15" fill="%23D5C197" fill-opacity="0.5"/></g></g><defs><clipPath id="clip0_97_2707"><rect width="15" height="30" fill="white"/></clipPath></defs></svg>');
 	--underline-color: var(--color-bg-brown-hover);
-}
-.theme-default #content h1 a,
-.theme-default #content .product-image a {
-	background-image: none;
 }
 .theme-default #footer {
 	background-color: var(--color-bg-brown-hover);
