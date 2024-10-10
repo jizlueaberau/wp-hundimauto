@@ -49,9 +49,6 @@
 				</div>
 			</div>
 		</article><!-- /end article page404 -->
-
-		<br /><br /><br />
-
 	</section><!-- /end content section -->
 
 <?php
