@@ -139,9 +139,12 @@ h4 {
 	}
 }
 
-/* Buttons */
+/* Buttons / Styles for WPForms */
 
-.btn-primary {
+.btn-primary,
+#content .wpforms-form input[type=submit],
+#content .wpforms-form button[type=submit] {
+	color: var(--color-text);
 	position: relative;
 	background: none;
 	border: 3px solid var(--color-bg-brown-hover);
@@ -153,9 +156,11 @@ h4 {
 	--bs-btn-active-color: var(--color-text);
 	--bs-btn-hover-border-color: var(--color-bg-brown);
 	overflow: hidden;
-
+	height: auto;
 }
-.btn-primary::before {
+.btn-primary::before,
+#content .wpforms-form input[type=submit]::before,
+#content .wpforms-form button[type=submit]::before {
 	position: absolute;
 	display: block;
 	content: "";
@@ -172,7 +177,9 @@ h4 {
 	-o-transition: all 400ms ease-out;
 	z-index: -1;
 }
-.btn-primary:hover::before {
+.btn-primary:hover::before,
+#content .wpforms-form input[type=submit]:hover::before,
+#content .wpforms-form button[type=submit]:hover::before {
 	width: 200%;
 }
 @media (min-width: 768px) {}
@@ -714,6 +721,20 @@ h4 {
 		margin-top: 0;
 	}
 }
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+/* WP Forms */
+
+#content .wpforms-container {
+	padding: 1rem;
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
 
 @media (min-width: 1200px) {}
 
