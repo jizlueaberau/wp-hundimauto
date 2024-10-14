@@ -728,8 +728,9 @@ h4 {
 
 /* WP Forms */
 
-#content .wpforms-container {
+#content .wpforms-container-full {
 	padding: 1rem;
+	margin: 0 !important;
 }
 
 @media (min-width: 768px) {}
