@@ -169,6 +169,17 @@ new \Kirki\Field\Text(
 	]
 );
 
+new \Kirki\Field\Editor(
+	[
+		'settings'		=> 'footer_openhours',
+		'label'			=> esc_html__( 'Öffnungszeiten', 'hundimauto' ),
+		'description'	=> '',
+		'section'		=> 'hundimauto_footer_contacts',
+		'default'		=> '',
+		'priority' => 40,
+	]
+);
+
 /* Social Media Repeater */
 
 new \Kirki\Field\Repeater(

@@ -25,22 +25,25 @@
 								<div class="col"><a href="mailto:<?php echo get_theme_mod('footer_mail'); ?>"><?php echo get_theme_mod('footer_mail'); ?></a></div>
 							</div>
 						</div>
+						<p>
+							<strong>Öffnungszeiten</strong><br />
+							<?php echo get_theme_mod('footer_openhours'); ?>
+						</p>
 						<?php
-							// Default values for social media channels repeater (kirki)
-							// Documentation: https://docs.themeum.com/kirki/controls/repeater/
-							$defaults = [
-								'channel_name'	=> '',
-								'channel_icon'	=> '',
-								'channel_url'	=> '',
-								'icon_style'	=> ''
-							];
-							// theme mod settings to check
-							$settings = get_theme_mod( 'social_media', $defaults );
-
+						// Default values for social media channels repeater (kirki)
+						// Documentation: https://docs.themeum.com/kirki/controls/repeater/
+						$defaults = [
+							'channel_name'	=> '',
+							'channel_icon'	=> '',
+							'channel_url'	=> '',
+							'icon_style'	=> ''
+						];
+						// theme mod settings to check
+						$settings = get_theme_mod( 'social_media', $defaults );
 						?><ul class="social-media">
-							<?php foreach ( $settings as $setting ) : ?>
-								<li><a href="<?php echo $setting['channel_url']; ?>" target="_blank" rel="no-follow"><img src="<?php echo $setting['channel_icon']['url']; ?>" alt="<?php echo $setting['channel_name']; ?>" style="<?php echo $setting['icon_style']; ?>" /></a></li>
-							<?php endforeach; ?>
+						<?php foreach ( $settings as $setting ) : ?>
+							<li><a href="<?php echo $setting['channel_url']; ?>" target="_blank" rel="no-follow"><img src="<?php echo $setting['channel_icon']['url']; ?>" alt="<?php echo $setting['channel_name']; ?>" style="<?php echo $setting['icon_style']; ?>" /></a></li>
+						<?php endforeach; ?>
 						</ul>
 					</div>
 					<div class="col-md-12 col-lg-6">

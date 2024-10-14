@@ -843,6 +843,9 @@ h4 {
 	font-size: 0.875rem;
 	margin-top: 2rem;
 }
+#footer .coordinates {
+	padding-bottom: 2rem;
+}
 #pre-footer {
 	padding: 2rem 0;
 }
