@@ -92,6 +92,9 @@ h4 {
 .bg-section-light {
 	background-color: var(--color-bg-lightgray);
 }
+.bg-section-brown {
+	background-color: var(--color-bg-brown-hover);
+}
 
 /* Bootstrap specific */
 
@@ -127,11 +130,11 @@ h4 {
 	background-position-x: calc(5000% + calc(var(--underline-intrinsic-size) * 1px)), calc(500% + calc(var(--underline-intrinsic-size) * 1px)), 600%;
 }
 #content h1 a,
+#content a.btn,
 #content .product-image a,
 #content .sb-expand-on-click {
 	background-image: none !important;
 }
-
 @media (min-width: 992px) {
 	#content h2 a {
 		--underline-intrinsic-size: 11;
@@ -182,9 +185,32 @@ h4 {
 #content .wpforms-form button[type=submit]:hover::before {
 	width: 200%;
 }
+#content a.btn-primary {
+	font-weight: 400;
+	padding: 0.6rem 1rem;
+}
+.button-wrapper {
+	display: flex;
+	padding: 0 1rem;
+}
+.button-wrapper.flex-start,
+.button-wrapper.flex-center,
+.button-wrapper.flex-end {
+	justify-content: flex-start;
+}
+
 @media (min-width: 768px) {}
 
 @media (min-width: 992px) {
+	.button-wrapper.flex-start {
+		justify-content: flex-start;
+	}
+	.button-wrapper.flex-center {
+		justify-content: center;
+	}
+	.button-wrapper.flex-end {
+		justify-content: flex-end;
+	}
 	.btn-primary {
 		font-size: 1.125rem;
 	}
@@ -481,6 +507,25 @@ h4 {
 		margin-top: 0;
 	}
 }
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
+
+/* Content Box */
+
+.content-box {
+	padding: 0 1rem;
+}
+.content-box div.bg-section-light,
+.content-box div.bg-section-brown {
+	padding: 1.5rem 1.5rem 1rem;
+	border-radius: 0.5rem;
+}
+
+@media (min-width: 768px) {}
 
 @media (min-width: 992px) {}
 
