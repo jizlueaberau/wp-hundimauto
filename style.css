@@ -24,6 +24,7 @@ Text Domain: hundimauto
 	--color-bg-brown: #d2ba8b;
 	--color-bg-white: #fff;
 	--color-bg-lightgray: #f7f7f7;
+	--color-bg-darkgray: #1d1d1d;
 	--color-bg-brown-hover: rgba(213,193,151,0.5);
 	--color-btn-brown-hover: rgba(213,193,151,0.25);
 	--color-bg-white-hover: rgba(255,255,255,0.5);
@@ -369,13 +370,9 @@ h4 {
 	}
 }
 
-@media (min-width: 1200px) {
-	
-}
+@media (min-width: 1200px) {}
 
-@media (min-width: 1400px) {
-
-}
+@media (min-width: 1400px) {}
 
 /* Section Titles */
 
@@ -910,14 +907,19 @@ h4 {
 	#intro h1 strong {
 		color: var(--color-white);
 	}
-	.btn-primary {
+	.btn-primary,
+	#content .wpforms-form input[type=submit],
+	#content .wpforms-form button[type=submit] {
+		color: var(--color-white);
 		border: 3px solid var(--color-bg-white-hover);
 		--bs-btn-color: var(--color-white);
 		--bs-btn-hover-color: var(--color-white);
 		--bs-btn-active-color: var(--color-white);
 		--bs-btn-hover-border-color: var(--color-bg-white);
 	}
-	.btn-primary::before {
+	.btn-primary::before,
+	#content .wpforms-form input[type=submit]::before,
+	#content .wpforms-form button[type=submit]::before {
 		background-color: var(--color-btn-white-hover);
 	}
 	#products,
@@ -932,6 +934,26 @@ h4 {
 	}
 	#footer .sub-footer {
 		background-color: var(--color-bg-body-dark);
+	}
+	.bg-section-light {
+		background-color: var(--color-bg-darkgray);
+	}
+
+	/* WP Forms */
+
+	div.wpforms-container-full .wpforms-field-label,
+	.wp-core-ui div.wpforms-container-full .wpforms-field-label,
+	div.wpforms-container-full .wpforms-field-label-inline,
+	.wp-core-ui div.wpforms-container-full .wpforms-field-label-inline {
+		color: var(--color-white) !important;
+	}
+
+	/* Reviews Feed */
+
+	#content .sb-item-author-name,
+	#content .sb-item-author-date,
+	#content .sb-item-text {
+		color: var(--color-white) !important;
 	}
 }
 
