@@ -83,7 +83,7 @@
 						</div>
 					</div>
 					<div class="col-md-12 col-lg-2 logo">
-						<a href="/"><img src="<?php echo get_theme_file_uri( 'assets/images/HiA-Sticker50mm-mit-weissem-Rand-OKfix.svg' ); ?>" alt="" class="w-100" /></a>
+						<a href="/"><img src="<?php echo get_theme_file_uri( 'assets/images/HiA-Sticker50mm-mit-weissem-Rand-OKfix.svg' ); ?>" alt="Hund im Auto, Ihr Ansprechpartner für optimale Transportlösungen für Ihren Hund im Auto" class="w-100" /></a>
 					</div>
 				</div>
 			</div>

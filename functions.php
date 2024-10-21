@@ -46,7 +46,6 @@ add_action( 'after_setup_theme', 'hundimauto_theme_setup' );
 function hundimauto_assets() {
 
 	// Enqueue CSS Files
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap', array(), '1.0', 'all' );
 	wp_enqueue_style( 'bootstrap', get_theme_file_uri('bootstrap/dist/css/bootstrap.min.css'), array(), 'v5.3.3', 'all' );
 	wp_enqueue_style( 'flaticon', get_theme_file_uri('assets/font/flaticon.css'), array(), false, 'all' );
 	wp_enqueue_style( 'hamburgers', get_theme_file_uri('assets/css/hamburgers.min.css'), array(), false, 'all' );
@@ -65,6 +64,14 @@ function hundimauto_assets() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'hundimauto_assets' );
+
+//Remove Gutenberg Block Library CSS from loading on the frontend
+//https://smartwp.com/remove-gutenberg-css/
+function smartwp_remove_wp_block_library_css(){
+ wp_dequeue_style( 'wp-block-library' );
+ wp_dequeue_style( 'wp-block-library-theme' );
+} 
+add_action( 'wp_enqueue_scripts', 'smartwp_remove_wp_block_library_css', 100 );
 
 /*
 	Enable SVG Upload

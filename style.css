@@ -47,6 +47,7 @@ Text Domain: hundimauto
 body {
 	font-family: var(--font-sans);
 	font-size: var(--font-size);
+	font-display: swap;
 	color: var(--color-text);
 	background-color: #fafafa;
 	line-height: 1.5;
@@ -119,7 +120,6 @@ h4 {
 	color: inherit;
 	text-decoration: none;
 	font-weight: 700;
-
 	transition: all 500ms ease-out;
 	-moz-transition: all 500ms ease-out;
 	-webkit-transition: all 500ms ease-out;
@@ -294,7 +294,7 @@ h4 {
 /* Theme Switcher */
 
 .theme-default #theme {
-	background-image: url(assets/images/logo-bg-default.png);
+	background-image: url(assets/images/logo-bg-default.png.webp);
 }
 .theme-default #content a {
 	background-image: linear-gradient(180deg, var(--color-bg-brown-hover), var(--color-bg-brown-hover)), var(--cap-image-left), var(--cap-image-right);
@@ -895,7 +895,7 @@ h4 {
 		background-color: var(--color-bg-body-dark);
 	}
 	.theme-default #theme {
-		background-image: url(assets/images/logo-bg-dark-mode.png);
+		background-image: url(assets/images/logo-bg-dark-mode.png.webp);
 	}
 	.theme-default #content a {
 		background-image: linear-gradient(180deg, var(--color-bg-white-hover), var(--color-bg-white-hover)), var(--cap-image-left), var(--cap-image-right);
