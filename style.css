@@ -47,7 +47,7 @@ Text Domain: hundimauto
 	--color-bg-white: #fff;
 	--color-bg-lightgray: #f7f7f7;
 	--color-bg-darkgray: #1d1d1d;
-	--color-bg-brown-hover: #eadfcb;
+	--color-bg-lightbrown: #eadfcb;
 	--color-btn-brown-hover: rgba(213,193,151,0.25);
 	--color-bg-white-hover: rgba(255,255,255,0.5);
 	--color-btn-white-hover: rgba(255,255,255,0.5);
@@ -117,7 +117,7 @@ h4 {
 	background-color: var(--color-bg-lightgray);
 }
 .bg-section-brown {
-	background-color: var(--color-bg-brown-hover);
+	background-color: var(--color-bg-lightbrown);
 }
 
 /* Bootstrap specific */
@@ -957,7 +957,8 @@ h4 {
 	#footer .sub-footer {
 		background-color: var(--color-bg-body-dark);
 	}
-	.bg-section-light {
+	.bg-section-light,
+	.bg-section-brown {
 		background-color: var(--color-bg-darkgray);
 	}
 
