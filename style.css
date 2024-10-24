@@ -7,7 +7,7 @@ Author URI: https://www.michkuck.com
 Description: Custom WordPress Theme for Hund im Auto
 Requires at least: 6.6.2
 Requires PHP: 8.1
-Version: 1.0
+Version: 1.1
 License: GNU General Public License v2 or later
 License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Text Domain: hundimauto
@@ -121,6 +121,11 @@ h4 {
 	background-color: var(--color-bg-lightbrown);
 }
 
+img[src*="data"],
+img:not([src]) {
+	visibility: hidden;
+}
+
 /* Bootstrap specific */
 
 .container-fluid .row {
@@ -156,6 +161,7 @@ h4 {
 #content h1 a,
 #content a.btn,
 #content .product-image a,
+#content .gallery-image a,
 #content .sb-expand-on-click {
 	background-image: none !important;
 }
@@ -601,6 +607,12 @@ h4 {
 .link-box:hover h3:before {
 	background-color: transparent;
 }
+.gallery-image {
+	border-radius: 0.5rem;
+	-webkit-box-shadow: 13px 10px 32px -6px rgba(186,186,186,0.59);
+	-moz-box-shadow: 13px 10px 32px -6px rgba(186,186,186,0.59);
+	box-shadow: 13px 10px 32px -6px rgba(186,186,186,0.59);
+}
 #content .link-box a {
 	display: flex;
 	position: relative;
@@ -651,6 +663,9 @@ h4 {
 	overflow: hidden;
 	background-color: #fff;
 	border-radius: 0.5rem;
+	-webkit-box-shadow: 13px 10px 32px -6px rgba(186,186,186,0.59);
+	-moz-box-shadow: 13px 10px 32px -6px rgba(186,186,186,0.59);
+	box-shadow: 13px 10px 32px -6px rgba(186,186,186,0.59);
 }
 .product-image .box div img {
 	z-index: 999;
