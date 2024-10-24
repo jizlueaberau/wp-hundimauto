@@ -15,35 +15,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="light dark" />
-    <!-- preload fonts -->
-    <link rel="peload" as="font" href="<?php echo get_theme_file_uri('assets/font/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6FxZCJgg.woff2'); ?>" fetchpriority="high" crossorigin>
-    <link rel="peload" as="font" href="<?php echo get_theme_file_uri('assets/font/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2'); ?>" fetchpriority="high"  crossorigin>
-    <style>
-        /* latin */
-        @font-face {
-          font-family: 'Open Sans';
-          font-style: italic;
-          font-weight: 300 800;
-          font-stretch: 100%;
-          font-display: optional;
-          src: url(<?php echo get_theme_file_uri('assets/font/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6FxZCJgg.woff2'); ?>) format('woff2');
-          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
-
-        /* latin */
-        @font-face {
-          font-family: 'Open Sans';
-          font-style: normal;
-          font-weight: 300 800;
-          font-stretch: 100%;
-          font-display: optional;
-          src: url(<?php echo get_theme_file_uri('assets/font/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2'); ?>) format('woff2');
-          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-        }
-        body {
-            font-family: 'Google Sans', system-ui, sans-serif;
-        }
-    </style>
     
     <?php wp_head(); ?>
 
