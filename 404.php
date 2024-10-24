@@ -26,7 +26,7 @@
 						<hgroup>
 							<h2><strong>Hoppla!</strong><br /><br />Da ist etwas schief gelaufen.</h2>
 						</hgroup>
-						<p>Seite <strong>404</strong> nicht gefunden. Hier geht's lang:</p>
+						<p><strong>Fehler 404:</strong> &ndash; Seite nicht gefunden. Hier geht's lang:</p>
 						<?php
 							wp_nav_menu(
 								array(
@@ -43,13 +43,15 @@
 					<div class="lcol">
 						<div class="lottie os-animation" data-animation="animate__fadeInUp" data-delay="400ms">
 							<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
-							<dotlottie-player src="https://lottie.host/dcc7ff57-1c06-4d16-aade-bc8814ad28e2/U77ItUl7HK.lottie" background="transparent" style="width:100%;height:100%;" speed="1" loop autoplay></dotlottie-player>
+							<dotlottie-player src="https://lottie.host/55adbc6a-ca09-48ae-9472-1eb506602e45/fe0beyRwKS.json" background="transparent" speed="1" style="width: 100%; height: 100%;" loop autoplay></dotlottie-player>
 						</div>
 					</div>
 				</div>
 			</div>
 		</article><!-- /end article page404 -->
 	</section><!-- /end content section -->
+
+	<br /><br /><br />
 
 <?php
 	get_footer();
