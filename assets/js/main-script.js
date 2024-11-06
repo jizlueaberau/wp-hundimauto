@@ -80,7 +80,7 @@
 				osElement.addClass('animate__animated').addClass(osAnimationClass);
 			}, {
 				triggerOnce: true,
-				offset: '110%'
+				offset: '200%'
 			});
 		});
 	}
