@@ -426,10 +426,22 @@ img:not([src]) {
 .video-frame {
 	position: relative;
 	overflow: hidden;
+
 	background-color: var(--color-bg-lightgray);
 }
 .landing-page .video-frame {
 	margin-top: 2rem;
+}
+.video-frame .cookieconsent-optout-marketing .box-inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100%;
+}
+.cookieconsent-optout-marketing .icon {
+	max-width: 100px;
+	margin-bottom: 1rem;
 }
 .video-frame iframe,
 .video-frame object,
