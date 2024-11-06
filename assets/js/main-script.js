@@ -88,7 +88,7 @@
 
 	// vimeo autoplay script
 	// https://jsfiddle.net/oxf4dtn3/
-
+/*
 	var players = [];
 	$('.video-frame').each(function() {
 		players.push({
@@ -106,7 +106,7 @@
 			var status = (elementFromTop > 0 && elementFromTop < players[i].top + viewportHeight) ? "play" : "pause";
 		}
 	});
-
+*/
 	// media modal based on bootstrap modal
 	// https://codepen.io/JacobLett/pen/xqpEYE
 	let media = Array();
