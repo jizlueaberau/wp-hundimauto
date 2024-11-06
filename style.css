@@ -440,8 +440,8 @@ img:not([src]) {
 	height: 100%;
 }
 .cookieconsent-optout-marketing .icon {
-	max-width: 100px;
-	margin-bottom: 1rem;
+	max-width: 20px;
+	margin-bottom: 0.5rem;
 }
 .video-frame iframe,
 .video-frame object,
@@ -458,7 +458,12 @@ img:not([src]) {
 	}
 }
 
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+	.cookieconsent-optout-marketing .icon {
+		max-width: 100px;
+		margin-bottom: 1rem;
+	}
+}
 
 @media (min-width: 1200px) {}
 
