@@ -125,7 +125,7 @@
 	if ( mediaModal != null ) {
 		mediaModal.addEventListener( 'shown.bs.modal', () => {
 			$(mediaModal).find('div.ratio').addClass( 'ratio-' + media.ratio );
-			$(mediaModal).find('.modal-header h6').append( media.title );
+			$(mediaModal).find('.modal-header h4').html( media.title );
 			if ( media.type == "vimeo" ) {
 				$(mediaModal).find('div.ratio').append(
 					'<iframe src="https://player.vimeo.com/video/' + media.src + '?' +
