@@ -426,9 +426,7 @@ img:not([src]) {
 .video-frame {
 	position: relative;
 	overflow: hidden;
-	background-size: cover;
-	background-positon: center;
-	background-repeat: no-repeat;
+	background-color: var(--color-bg-lightgray);
 }
 .landing-page .video-frame {
 	margin-top: 2rem;
