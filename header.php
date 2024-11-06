@@ -15,10 +15,11 @@
         dataLayer.push(arguments)
     }
     gtag("consent", "default", {
-        ad_personalizatioin: "denied",
+        ad_personalization: "denied",
         ad_storage: "denied",
         ad_user_data: "denied",
         analytics_storage: "denied",
+        functionality_storage: "denied",
         personalization_storage: "denied",
         security_storage: "granted",
         wait_for_udpate: 500
