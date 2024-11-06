@@ -58,7 +58,7 @@ function hundimauto_assets() {
 	wp_enqueue_script( 'jquery-waypoints', get_theme_file_uri('assets/js/jquery.waypoints.min.js"'), array('jquery'), '4.0.0', true );
 	wp_enqueue_script( 'froogaloop', get_theme_file_uri('assets/js/froogaloop.js"'), array(), false, true );
 	wp_enqueue_script( 'vimeo-player', get_theme_file_uri('assets/js/vimeo.player.2.24.0.min.js'), array(), 'v2.24.0', true );
-	wp_enqueue_script( 'hundimauto-js', get_theme_file_uri('assets/js/main-script.js'), array('jquery','jquery-ui-core','jquery-ui-selectmenu'), '1.0', true );
+	wp_enqueue_script( 'hundimauto-js', get_theme_file_uri('assets/js/main-script.js'), array('jquery','jquery-ui-core','jquery-ui-selectmenu'), '1.1', true );
 	if ( is_singular() && comments_open() && get_option( 'thread_comments') ) {
 		wp_enqueue_script( 'comment-reply');
 	}
