@@ -50,7 +50,7 @@ function hundimauto_assets() {
 	wp_enqueue_style( 'flaticon', get_theme_file_uri('assets/font/flaticon.css'), array(), false, 'all' );
 	wp_enqueue_style( 'hamburgers', get_theme_file_uri('assets/css/hamburgers.min.css'), array(), false, 'all' );
 	wp_enqueue_style( 'animate-css', get_theme_file_uri('assets/css/animate.min.css'), array(), '4.1.1', 'all' );
-	wp_enqueue_style( 'hundimauto', get_stylesheet_uri(), array('bootstrap'), '1.2', 'all' );
+	wp_enqueue_style( 'hundimauto', get_stylesheet_uri(), array('bootstrap'), '1.3', 'all' );
 
 	// Enqueue JS Files
 	// Don't enqueue jQuery files it'll be loaded from WordPress when required
