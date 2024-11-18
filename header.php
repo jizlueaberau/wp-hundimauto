@@ -45,7 +45,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     
     <?php wp_head(); ?>
-
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+            var elementsArray = document.querySelectorAll('[id^="wpforms-form-"]');
+            elementsArray.forEach(function(elem) {
+                elem.addEventListener("submit", function(e) {
+                    window.dataLayer.push({
+                        event: "wpFormSubmit",
+                        wpFormElement: event.target
+                    });
+                });
+            });
+        });
+    </script>
 </head>
 <body <?php body_class( get_theme_mod( 'theme_setting') ); ?>><!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55V2MMQ"
